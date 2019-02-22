@@ -6,6 +6,10 @@
     display: inline-block;
 }
 
+h1 {
+    font-size: 40pt;
+}
+
 #container {
     text-align: center;
     margin: auto;
@@ -14,7 +18,7 @@
 
 #btns {
     padding: 20px;
-    background-color: aqua;
+    background-color: black;
     margin-bottom: 20px;
 }
 
