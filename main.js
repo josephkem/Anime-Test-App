@@ -1,4 +1,4 @@
-const playpause = anime ({
+var playPause = anime ({
     targets: 'div.box',
     translateY: [
         {value: 200, duration: 500},
@@ -9,6 +9,9 @@ const playpause = anime ({
         easing: 'easeInOutSine'
     },
     delay: (el,i,l) => {return i * 1000},
-    autoplay: false
+    autoplay: false,
+    loop: true
 });
 
+document.querySelector('#container .play').onclick = playPause.play;
+document.querySelector('#container .pause').onclick = playPause.pause;
